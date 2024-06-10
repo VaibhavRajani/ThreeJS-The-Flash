@@ -30,8 +30,12 @@ export default function Model() {
         group.current.position.y -= delta * 5;
       } else {
         setIsJumpingDown(false);
-        actions["jumpDown"].stop();
-        actions["waveHello"].play();
+        if (actions["jumpDown"]) {
+          actions["jumpDown"].stop();
+        }
+        if (actions["waveHello"]) {
+          actions["waveHello"].play();
+        }
         setAnimationState("standing");
       }
     }
@@ -46,8 +50,12 @@ export default function Model() {
     const punchAction = actions["punch"];
 
     if (animationState === "standing" && scrollOffset > 0) {
-      actions["waveHello"].stop();
-      runAction.play();
+      if (actions["waveHello"]) {
+        actions["waveHello"].play();
+      }
+      if (runAction) {
+        runAction.play();
+      }
       setAnimationState("running");
     }
 
@@ -56,7 +64,9 @@ export default function Model() {
         (window.scrollY /
           (document.documentElement.scrollHeight - window.innerHeight)) *
         3;
-      runAction.time = runAction.getClip().duration * offset;
+      if (runAction) {
+        runAction.time = runAction.getClip().duration * offset;
+      }
     }
 
     if (
@@ -64,8 +74,12 @@ export default function Model() {
         document.documentElement.scrollHeight - 50 &&
       animationState !== "waving"
     ) {
-      runAction.stop();
-      punchAction.reset().play();
+      if (runAction) {
+        runAction.stop();
+      }
+      if (punchAction) {
+        punchAction.reset().play();
+      }
       setAnimationState("waving");
     }
   });
