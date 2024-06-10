@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           Hello, HubSpot!
         </h1>
         <p className="text-lg font-serif text-black text-center">
-          A hub of innovation and a spot of genius: that’s me!
+          A hub of innovation and a spot of genius: that&apos;s me!
         </p>
       </section>
       <div className="text-black">

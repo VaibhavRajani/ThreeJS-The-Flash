@@ -30,12 +30,13 @@ const sections = [
     title: "Exploring HubSpot's Dynamic Culture Code",
     content: (
       <>
-        At HubSpot, the culture code is more than just a set of guidelines; it's
-        the backbone of a thriving ecosystem that champions transparency,
-        continuous improvement, and inclusivity. Rooted in the belief that
-        'culture is to recruiting as product is to marketing,' HubSpot
-        cultivates an environment where each team member is empowered to bring
-        their whole selves to work. The culture is built on the principles of{" "}
+        At HubSpot, the culture code is more than just a set of guidelines;
+        it&apos;s the backbone of a thriving ecosystem that champions
+        transparency, continuous improvement, and inclusivity. Rooted in the
+        belief that &apos;culture is to recruiting as product is to
+        marketing,&apos; HubSpot cultivates an environment where each team
+        member is empowered to bring their whole selves to work. The culture is
+        built on the principles of{" "}
         <a
           href="https://blog.hubspot.com/blog/tabid/6307/bid/34234/the-hubspot-culture-code-creating-a-company-we-love.aspx#:~:text=at%20HubSpot%20have-,HEART,-%3A%20Humble"
           className="text-orange-500"
@@ -49,7 +50,7 @@ const sections = [
         another with respect and honesty. This framework not only enhances team
         cohesion but also drives innovation by encouraging HubSpotters to
         embrace change and collaborate freely. By solving for the customer and
-        valuing open communication, HubSpot's culture code ensures that the
+        valuing open communication, HubSpot&apos;s culture code ensures that the
         company remains a beacon for those seeking a workplace that genuinely
         fosters personal and professional growth.
       </>
@@ -147,8 +148,8 @@ const Portfolio = () => {
             height={60}
           />
           <h2 className="text-xl font-semibold font-serif italic text-gray-700">
-            Why hire me? Because I'm the perfect 'Hub' for all your 'Spot'-on
-            solutions!
+            Why hire me? Because I&apos;m the perfect &apos;Hub&apos; for all
+            your &apos;Spot&apos;-on solutions!
           </h2>
         </section>
       </div>
